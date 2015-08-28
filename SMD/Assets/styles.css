@@ -573,3 +573,8 @@ kbd
     padding:.1em .6em;
     text-shadow:0 1px 0 #fff;
 }
+
+/* Anchor tag surrounding H1 should be black */
+a.title {
+    color: black;
+}
