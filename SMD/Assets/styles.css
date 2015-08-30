@@ -581,9 +581,9 @@ a.title {
 
 /* New styling for blockquotes */
 blockquote {
-    border-left: 4px solid #ccc;
+    border-left: 4px solid #78eed0;
     color: #a5a4a4;
     font-style: italic;
     margin: 30px 0 30px 15px;
     padding-left: 15px;    
-} 
+}
