@@ -528,11 +528,11 @@ br.floatlist {
 }
 
 /* Styling of external links */
-a[target=_blank] {
+a[target=_blank]:not(.btn) {
     margin-right: 1em;
 }
 
-a[target=_blank]:after {
+a[target=_blank]:not(.btn):after {
     position: absolute;
     font-family: FontAwesome;
     font-size: 0.8em;
@@ -545,7 +545,7 @@ a[target=_blank]:after {
     -ms-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
-    background-image: none;
+    background-image: none; 
 }
 
 /* Hiding custom tags */
