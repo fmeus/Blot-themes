@@ -15,6 +15,18 @@
 
           {{{body}}}
 
+          <p>
+            <a class="btn" href="https://twitter.com/intent/tweet?text={{title}}&url={{blogURL}}{{url}}" target="_blank">
+              <i class="fa fa-twitter fa-lg fa-fw fa-smd-twitter"></i> Share on Twitter
+            </a>
+            <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u={{blogURL}}{{url}}" target="_blank">
+              <i class="fa fa-facebook fa-lg fa-fw fa-smd-facebook"></i> Share on Facebook
+            </a>
+            <a class="btn" href="https://plus.google.com/share?url={{blogURL}}{{url}}" target="_blank">
+              <i class="fa fa-google-plus fa-lg fa-fw fa-smd-googleplus"></i> Share on Google+
+            </a>
+          </p>
+
           {{#tags.length}}
           <p>
             {{#tags}}
