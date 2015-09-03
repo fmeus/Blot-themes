@@ -609,10 +609,13 @@ blockquote {
 /* Colors and alignment for sharing buttons */
 .fa-smd-twitter {
   color: rgba(33, 162, 207, 1);
+  line-height:1.4;
 }
 .fa-smd-facebook {
   color: rgba(78, 104, 163, 1);
+  line-height:1.4;
 }
 .fa-smd-googleplus {
   color: rgba(215, 65, 59, 1);
+  line-height:1.4;
 }
