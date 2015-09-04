@@ -184,7 +184,13 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 
 /* RULE */
 
-hr {width: 100%;margin: 24px auto -1px;border: none;border-bottom: 3px double #efefef; padding-bottom: 1.4em;text-shadow: none;box-shadow: none;}
+hr {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid rgb(222, 233, 244);
+  text-shadow: none;
+  box-shadow: none;
+}
 
 
 /* TABLES */
@@ -618,4 +624,9 @@ blockquote {
 .fa-smd-googleplus {
   color: rgba(215, 65, 59, 1);
   line-height:1.4;
+}
+
+/* Styling of U tag */
+u {
+  text-decoration: underline;
 }
