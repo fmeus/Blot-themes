@@ -626,6 +626,11 @@ blockquote {
   line-height:1.4;
 }
 
+.fa-smd-tumblr {
+  color: rgba(53, 70, 92, 1);
+  line-height:1.4;
+}
+  
 /* Styling of U tag */
 u {
   text-decoration: underline;
