@@ -635,3 +635,10 @@ blockquote {
 u {
   text-decoration: underline;
 }
+
+/* Styling for generation date/time on tags page */
+span.update {
+    color: #aaa;
+    font-style: italic;
+    font-size: small;
+}
