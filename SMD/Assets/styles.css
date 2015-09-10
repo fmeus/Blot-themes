@@ -548,7 +548,7 @@ a[target=_blank]:not(.btn):after {
   -ms-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
   transform: scale(-1, 1);
-  background-image: none; 
+  background-image: none;
 }
 
 /* Hiding custom tags */
@@ -638,7 +638,24 @@ u {
 
 /* Styling for generation date/time on tags page */
 span.update {
-    color: #aaa;
-    font-style: italic;
-    font-size: small;
+  color: #aaa;
+  font-style: italic;
+  font-size: small;
+}
+
+/* Styling for the archive page */
+h2.archive {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-variant: small-caps;
+}
+
+span.archive {
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+a.archive {
+  font-size: medium;
 }

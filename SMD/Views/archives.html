@@ -8,9 +8,9 @@
         <h1>Archives</h1>
         <div>
           {{#allEntries}}
-          <a href="{{url}}">{{title}}</a> <span class="small">{{date}}</span>
-          <br />
-          {{/allEntries}}          
+          <h2 class="archive">{{metadata.month}}</h2>
+          <span class="archive">{{metadata.day}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
+          {{/allEntries}}
         </div>
         {{> footer}}
       </div>
