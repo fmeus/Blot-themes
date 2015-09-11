@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    {{> header}}
+    <div class="container">
+      <div class="main">
+        <h1>Tags</h1>
+        <div class="floatlist">
+          <ul>
+            {{#allTags}}
+            <li><a href="/tagged/{{name}}">{{name}}</a> <span class="badge">{{entries.length}}</span></li>
+            {{/allTags}}
+          </ul>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+  </body>
+</html>
