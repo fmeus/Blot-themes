@@ -501,6 +501,18 @@ thead {
   background: rgb(128, 128, 244);
 }
 
+table tr:nth-child(odd) td {
+  background-color: #b8d1f3;
+}
+
+table tr:nth-child(even) td {
+  background-color: #dae5f4;
+}
+
+table tr:hover td {
+  background-color: rgb(200, 200, 200);
+}
+
 /* Styling of tags */
 span.badge {
   padding-left: 5px;
