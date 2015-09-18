@@ -671,3 +671,53 @@ span.archive {
 a.archive {
   font-size: medium;
 }
+
+/* Styling for calendar badge */
+div.calendar {
+  background-color: rgba(236, 236, 236, 1);
+  width: 60px;
+  height: 60px;
+  line-height: 20px;
+  /*border: 2px solid rgba(231, 230, 230, 1);*/
+  /*border: 2px solid rgba(246, 197, 254, 1);*/
+  border: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  vertical-align:middle;
+  color: white;
+  display: block;
+  float: right;
+}
+
+span.month {
+  background-color: rgba(185, 113, 249, 1);
+  display: block;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+span.year {
+  background-color: rgba(128, 74, 172, 1);
+  display: block;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+span.day {
+  display: block;
+  color: black;
+}
