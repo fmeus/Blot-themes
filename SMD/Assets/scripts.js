@@ -29,11 +29,11 @@ $('h2.archive').each(
 // Calendar badge related code
 $('span.month').each(
 	function(){
-		$(this).text( $(this).text().substring(0,3));
+		$(this).text( $(this).attr("data").substring(0,3));
 	}
 );
-$('span.day').each(
+$('span.year').each(
 	function(){
-		$(this).text( $(this).text().substring($(this).text().indexOf(' ')));
+		$(this).text( $(this).data("data").substring($(this).attr("data").indexOf(' ')));
 	}
 );
