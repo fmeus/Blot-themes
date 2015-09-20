@@ -8,7 +8,15 @@
         <div class="entry">
         {{#entry}}
           {{#date}}
-          <a class="small date left margin" href="{{url}}">{{date}}</a>
+            <div class="left margin">
+              <a href="http://sharedmemorydump.net/">
+                <div class="calendar">
+                  <span class="month" data="{{metadata.month}}"> </span>
+                  <span class="day">{{metadata.day}}</span>
+                  <span class="year" data="{{metadata.month}}"> </span>
+                </div>
+              </a>
+            </div>
           {{/date}}
           
           <a class="title" href="{{url}}"><h1>{{title}}</h1></a>
