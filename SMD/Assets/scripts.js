@@ -25,3 +25,15 @@ $('h2.archive').each(
 		}
 	}
 );
+
+// Calendar badge related code
+$('span.month').each(
+	function(){
+		$(this).text( $(this).text().substring(0,3));
+	}
+);
+$('span.day').each(
+	function(){
+		$(this).text( $(this).text().substring($(this).text().indexOf(' ')));
+	}
+);
