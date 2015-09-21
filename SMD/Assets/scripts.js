@@ -21,10 +21,10 @@ $('span.archive').each(
 		var data = $(this).attr('data');
 
 		// Get the day
-		var txtDay = data.substring(data.indexOf(' '),data.indexOf(','));
+		var txtDay = '0'+data.substring(data.indexOf(' '),data.indexOf(',')).trim()+':';
 
-		// Update the content
-		$(this).text(txtDay+':');
+        // Update the content
+		$(this).text(txtDay.slice(-3));
 	}
 );
 
