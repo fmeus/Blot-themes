@@ -687,6 +687,7 @@ div.calendar {
   text-align: center;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 24px;
   vertical-align:middle;
   color: white;
   display: block;
