@@ -27,13 +27,19 @@ $('h2.archive').each(
 );
 
 // Calendar badge related code
-$('span.month').each(
+$('div.calendar').each(
 	function(){
-		$(this).text($(this).attr("data").substring(0,3));
-	}
-);
-$('span.year').each(
-	function(){
-		$(this).text($(this).attr("data").substring($(this).attr("data").indexOf(' ')));
+		// Get the date of the post
+		var data = $(this).attr('data');
+
+		// Determine the date components
+		var txtMonth = data.substring(0,3);
+		var txtDay = data.substring(data.indexOf(' '),data.indexOf(','));
+		var txtYear = data.substring(data.indexOf(', ')+1);
+
+		// Update the content of the span elements
+		$(this).children('.month').text(txtMonth);
+		$(this).children('.day').text(txtDay);
+		$(this).children('.year').text(txtYear);
 	}
 );

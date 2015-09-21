@@ -8,11 +8,11 @@
         {{#entries}}
         <div class="entry">
           <div class="left margin">
-              <div class="calendar">
-                  <span class="month" data="{{metadata.month}}"> </span>
-                  <span class="day">{{metadata.day}}</span>
-                  <span class="year" data="{{metadata.month}}"> </span>
-              </div>
+            <div class="calendar" data="{{date}}">
+              <span class="month"> </span>
+              <span class="day"> </span>
+              <span class="year"> </span>
+            </div>
           </div>
           <a class="title" href="{{url}}"><h1>{{title}}</h1></a>
           {{{body}}}
