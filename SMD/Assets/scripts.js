@@ -14,12 +14,33 @@ $('pp').each(
 	}
 );
 
-// Handling of 'dividers' for archive page
+// Set day component on the Archives page
+$('span.archive').each(
+	function(){
+		// Get the date of the post
+		var data = $(this).attr('data');
+
+		// Get the day
+		var txtDay = data.substring(data.indexOf(' '),data.indexOf(','));
+
+		// Update the content
+		$(this).text(txtDay+':');
+	}
+);
+
+// Set month/year component on the Archives page and make sure on the first of each is visible
 var smd_divider = "";
 $('h2.archive').each(
 	function(){
-		if ( smd_divider != $(this).text() ) {
-			smd_divider = $(this).text();
+		// Get the date of the post
+		var data = $(this).attr('data');
+
+		// Determine the date components
+		var txtHeading = data.substring(0,data.indexOf(' ')) + data.substring(data.indexOf(',')+1);
+
+		if ( smd_divider != txtHeading ) {
+			smd_divider = txtHeading;
+			$(this).text(txtHeading);
 		} else {
 			$(this).toggle();
 		}

@@ -8,8 +8,8 @@
         <h1>Archives</h1>
         <div>
           {{#allEntries}}
-          <h2 class="archive">{{metadata.month}}</h2>
-          <span class="archive">{{metadata.day}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
+          <h2 class="archive" data="{{date}}">?</h2>
+          <span class="archive" data="{{date}}">?:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
           {{/allEntries}}
         </div>
         {{> footer}}
