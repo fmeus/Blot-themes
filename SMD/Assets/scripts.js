@@ -28,25 +28,6 @@ $('span.archive').each(
 	}
 );
 
-// Set month/year component on the Archives page and make sure on the first of each is visible
-var smd_divider = "";
-$('h2.archive').each(
-	function(){
-		// Get the date of the post
-		var data = $(this).attr('data');
-
-		// Determine the date components
-		var txtHeading = data.substring(0,data.indexOf(' ')) + data.substring(data.indexOf(',')+1);
-
-		if ( smd_divider != txtHeading ) {
-			smd_divider = txtHeading;
-			$(this).text(txtHeading);
-		} else {
-			$(this).toggle();
-		}
-	}
-);
-
 // Calendar badge related code
 $('div.calendar').each(
 	function(){

@@ -7,10 +7,14 @@
       <div class="main">
         <h1>Archives</h1>
         <div>
-          {{#allEntries}}
-          <h2 class="archive" data="{{date}}">---</h2>
-          <span class="archive" data="{{date}}">--:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
-          {{/allEntries}}
+            {{#archives}}
+              {{#months}}
+                <h2 class="archive">{{month}} {{year}}</h2>
+                {{#entries}}
+                    <span class="archive" data="{{date}}">--:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
+                {{/entries}}
+              {{/months}}
+            {{/archives}}
         </div>
         {{> footer}}
       </div>
