@@ -9,6 +9,7 @@
   <author>
   <name>{{name}}</name>
   </author>
+  <ttl>30</ttl>
   {{#recentEntries}}
   <item>
     <title>{{title}}</title>
