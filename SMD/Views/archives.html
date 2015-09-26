@@ -11,7 +11,7 @@
               {{#months}}
                 <h2 class="archive">{{month}} {{year}}</h2>
                 {{#entries}}
-                    <span class="archive" data="{{date}}">--:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
+                    <span class="archive">{{#formatDate}}DD{{/formatDate}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
                 {{/entries}}
               {{/months}}
             {{/archives}}

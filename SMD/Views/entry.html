@@ -9,10 +9,10 @@
         {{#entry}}
           {{#date}}
             <div class="left margin">
-              <div class="calendar" data="{{date}}">
-                <span class="month"> </span>
-                <span class="day"> </span>
-                <span class="year"> </span>
+              <div class="calendar">
+                <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
+                <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
+                <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
               </div>
             </div>
           {{/date}}

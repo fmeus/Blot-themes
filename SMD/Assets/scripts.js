@@ -13,35 +13,3 @@ $('pp').each(
 		}
 	}
 );
-
-// Set day component on the Archives page
-$('span.archive').each(
-	function(){
-		// Get the date of the post
-		var data = $(this).attr('data');
-
-		// Get the day
-		var txtDay = '0'+data.substring(data.indexOf(' '),data.indexOf(',')).trim()+':';
-
-        // Update the content
-		$(this).text(txtDay.slice(-3));
-	}
-);
-
-// Calendar badge related code
-$('div.calendar').each(
-	function(){
-		// Get the date of the post
-		var data = $(this).attr('data');
-
-		// Determine the date components
-		var txtMonth = data.substring(0,3);
-		var txtDay = data.substring(data.indexOf(' '),data.indexOf(','));
-		var txtYear = data.substring(data.indexOf(', ')+1);
-
-		// Update the content of the span elements
-		$(this).children('.month').text(txtMonth);
-		$(this).children('.day').text(txtDay);
-		$(this).children('.year').text(txtYear);
-	}
-);
