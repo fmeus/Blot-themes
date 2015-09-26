@@ -724,3 +724,12 @@ span.day {
   display: block;
   color: black;
 }
+
+/* Hide certain elements when printing */
+@media print
+{    
+    .shareButtons, .previousEntry, #disqus_thread
+    {
+        display: none !important;
+    }
+}
