@@ -2,7 +2,7 @@
 
 // This script is embedded in the footer of every page
 
-/* Processing of code blocks for syntax highlighting and/or line numbers */
+// Processing of code blocks for syntax highlighting and/or line numbers
 $('pp').each(
 	function(){
 		var val = $(this).text();
@@ -21,5 +21,13 @@ $('img').each(function() {
 
 	if ( imgName.substr(imgName.length - 3) == '-ds' ) {
 		$(this).addClass('dropshadow');
+	}
+});
+
+// Update title attribtue using alt attribute if not already set
+$('img').each(function() {
+	var title = $(this).prop('title');
+	if ( title === '' ) {
+		$(this).prop('title', $(this).prop('alt'));
 	}
 });
