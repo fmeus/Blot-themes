@@ -9,12 +9,9 @@
     <div class="nav">
       <a href="/" title="Home"><i class="fa fa-home"></i> Home</a>
       <a href="/archives" title="Archives"><i class="fa fa-archive"></i> Archives</a>
-      <a href="/about" title="About Me"><i class="fa fa-user-secret"></i> About Me</a>
       <a href="/tagcloud" title="Tags"><i class="fa fa-tags"></i> Tags</a>
-      <a href="/objective-c-snippets" title="ObjC Snippets"><i class="fa fa-code"></i> ObjC Snippets</a>
-      <a href="/privacy" title="Privacy"><i class="fa fa-lock"></i> Privacy</a>
       {{#menu}}
-      <a href="{{url}}" title="{{label}}">{{label}}</a>
+      <a href="{{url}}" title="{{label}}">{{#metadata.icon}}<i class="fa {{metadata.icon}}"></i> {{/metadata.icon}}{{label}}</a>
       {{/menu}}
       <div class="right">
         <a class="search" href="/search" title="Search {{title}}">Search</a>
