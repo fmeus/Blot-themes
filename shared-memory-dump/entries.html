@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    {{> header}}
+    <div class="container">
+      <div class="main">
+        {{#entries}}
+        <div class="entry">
+          <div class="left margin">
+            <div class="calendar">
+              <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
+              <span class="day">{{#formatDate}}D{{/formatDate}}</span>
+              <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
+            </div>
+          </div>
+          <a class="title" href="{{url}}"><h1>{{title}}</h1></a>
+          {{{teaserBody}}}
+          {{#more}}
+          <div class="more"><a class="more" href="{{url}}">Read the rest of this entry <i class="fa fa-long-arrow-right"></i></a></div>
+          {{/more}}
+          {{#tags}}
+          <a class="small tag" href="/tagged/{{slug}}">{{name}}</a>
+          {{/tags}}
+          <div class="clear"></div>
+        </div>
+        {{/entries}}
+        {{#pagination}}
+        <div class="pagination">
+          {{#previous}}
+            <a href="/page/{{previous}}">← Newer</a>
+          {{/previous}}
+          Page {{current}} of {{total}}
+          {{#next}}
+            <a href="/page/{{next}}">Older →</a>
+          {{/next}}
+        </div>
+        {{/pagination}}
+        {{> footer}}
+      </div>
+    </div>
+  </body>
+</html>
