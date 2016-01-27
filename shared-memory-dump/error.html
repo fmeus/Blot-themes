@@ -13,13 +13,5 @@
         {{> footer}}
       </div>
     </div>
-    <script type="text/javascript">
-      $(function(){
-        var url = $(location).attr('href').replace(/post\/[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])-/,'');
-        if ( $(location).attr('href') !== url ) {
-          $(location).attr('href',url);
-        }
-      });
-    </script>
   </body>
 </html>
