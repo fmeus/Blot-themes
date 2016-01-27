@@ -9,15 +9,24 @@
         <div>
             {{#archives}}
               {{#months}}
-                <h2 class="archive">{{month}} {{year}}</h2>
+                <h2 class="archive">{{month}} {{year}} <span title="Click to hide/show posts" class="count" id="{{month}}{{year}}">({{entries.length}} posts)</span></h2>
+                <div class="archive" id="{{month}}{{year}}">
                 {{#entries}}
                     <span class="archive">{{#formatDate}}DD{{/formatDate}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
                 {{/entries}}
+                </div>
               {{/months}}
             {{/archives}}
         </div>
         {{> footer}}
       </div>
     </div>
+
+    <script>
+    $('span.count').click(function() {
+      var id = $(this).prop('id');
+      $( 'div#'+id ).toggle();
+    });
+    </script>
   </body>
 </html>
