@@ -16,9 +16,9 @@ body {
 .small,
 .caption {font-size: 13px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #999;font-weight: 500;}
 
-.caption {t
+.caption {
   line-height: 18px;
-  display: block;
+  display: block;c
   margin: 9px auto 24px;
   max-width: 600px;
   font-style: normal;
@@ -684,11 +684,11 @@ a.archive {
 /* Styling for calendar badge */
 div.calendar {
   background-color: rgba(236, 236, 236, 1);
-  width: 60px;
-  height: 60px;
-  line-height: 20px;
+  width: 45px;
+  height: 45px;
+  line-height: 15px;
   border: 0px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
