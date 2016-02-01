@@ -588,6 +588,7 @@ kbd
 /* Anchor tag surrounding H1 should be black */
 a.title {
   color: black;
+  background-image: none;
 }
 
 /* New styling for blockquotes */
