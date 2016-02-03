@@ -1,20 +1,12 @@
 <div class="container">
   <div class="main">
-    <h1>Archives</h1>
-    <div>
-      {{#allEntries}}
-      <a href="{{url}}">{{title}}</a> <span class="small">{{date}}</span><br/>
-      Handle = {{handle}}<br/>
-      ID = {{id}}<br/>
-      Pub Date = {{dateUTC}}<br/>
-      Date = {{date}}<br/>
-      Created = {{created}}<br/>
-      Updated = {{updated}}<br/>
-      Year = {{metadata.year}}<br/>
-      Month = {{metadata.month}}<br/>
-      Day = {{metadata.day}}<br/>
-      <br />
-      {{/allEntries}}          
+    disqusShortname: {{disqusshortname}}<br/>
+    disqus_Shortname: {{disqus_shortname}}<br/>
+    Shortname: {{shortname}}<br/>
+    disqusname: {{disqusname}}<br/>
+    disqus_name: {{disqus_name}}<br/>
+    disqus.shortname: {{disqus.shortname}}<br/>
+    disqus: {{disqus}}<br/>
     </div>
     {{> footer}}
   </div>
