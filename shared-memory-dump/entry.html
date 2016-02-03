@@ -13,6 +13,9 @@
                 <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
                 <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
                 <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
+                <br/>
+                <span style="color: black">
+                <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{id}}"></span></span>
               </div>
             </div>
           {{/date}}
@@ -37,10 +40,8 @@
           </p>
 
           {{#tags.length}}
-          <p>
-            {{#tags}}
-            <a class="small tag" href="/tagged/{{slug}}">{{name}}</a>
-            {{/tags}}
+          <p style="font-size: 10pt;">
+          <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
           </p>
           {{/tags.length}}
 
