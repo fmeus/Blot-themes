@@ -14,7 +14,7 @@
               <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
               <br/>
               <span style="color: black">
-              <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{id}}"></span></span>
+              <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{id}}">0</span></span>
             </div>
           </div>
           <h1><a class="title" href="{{url}}">{{title}}</a></h1>
@@ -22,9 +22,11 @@
           {{#more}}
           <div class="more"><a class="more" href="{{url}}">Read the rest of this post <i class="fa fa-long-arrow-right"></i></a></div>
           {{/more}}
+          {{#tags.length}}
           <div style="font-size: 10pt;margin-top: 5px;">
             <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
           </div>
+          {{/tags.length}}
           <div class="clear">
           </div>
         </div>
