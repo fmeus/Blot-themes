@@ -5,7 +5,9 @@
  "id": "78:shared-memory-dump",
  "owner": "78",
  "slug": "shared-memory-dump",
- "locals": {},
+ "locals": {
+  "disqus_shortname": "sharedmemorydump"
+ },
  "description": "Design template for Shared Memory Dump",
  "thumb": "",
  "localEditing": true,
