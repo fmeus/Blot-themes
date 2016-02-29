@@ -5,29 +5,12 @@
  "id": "78:shared-memory-dump",
  "owner": "78",
  "slug": "shared-memory-dump",
- "locals": {
-  "disqus_shortname": "sharedmemorydump"
- },
+ "locals": {},
  "description": "Design template for Shared Memory Dump",
  "thumb": "",
  "localEditing": true,
  "views": {
-  "sitemap": {
-   "url": "/sitemap.xml",
-   "locals": {},
-   "type": "application/xml"
-  },
   "favicons": {
-   "url": "",
-   "locals": {},
-   "type": "text/html"
-  },
-  "feed": {
-   "url": "/feed.rss",
-   "locals": {},
-   "type": "application/xml"
-  },
-  "head": {
    "url": "",
    "locals": {},
    "type": "text/html"
@@ -40,18 +23,21 @@
    },
    "type": "text/html"
   },
-  "error": {
+  "entry": {
    "url": "",
    "locals": {
-    "pageTitle": "{{{error.title}}} - {{{title}}}",
-    "pageDescription": "Error on {{{title}}}"
+    "pageTitle": "{{{entry.title}}} - {{{title}}}",
+    "pageDescription": "{{{entry.summary}}}"
    },
    "type": "text/html"
   },
-  "robots": {
-   "url": "/robots.txt",
-   "locals": {},
-   "type": "text/plain"
+  "search": {
+   "url": "",
+   "locals": {
+    "pageTitle": "Search - {{{title}}}",
+    "pageDescription": "Seach all the entries posted on {{{title}}}"
+   },
+   "type": "text/html"
   },
   "footer": {
    "url": "",
@@ -63,14 +49,6 @@
    "locals": {
     "pageTitle": "Index of {{{path}}}",
     "pageDescription": "All the files and folders inside {{{path}}}"
-   },
-   "type": "text/html"
-  },
-  "tagged": {
-   "url": "",
-   "locals": {
-    "pageTitle": "Entries tagged {{{tag}}} from {{{title}}}",
-    "pageDescription": "All of the entries posted on {{{title}}} tagged {{{tag}}}"
    },
    "type": "text/html"
   },
@@ -87,6 +65,37 @@
    "locals": {},
    "type": "text/css"
   },
+  "tagged": {
+   "url": "",
+   "locals": {
+    "pageTitle": "Entries tagged {{{tag}}} from {{{title}}}",
+    "pageDescription": "All of the entries posted on {{{title}}} tagged {{{tag}}}"
+   },
+   "type": "text/html"
+  },
+  "head": {
+   "url": "",
+   "locals": {},
+   "type": "text/html"
+  },
+  "sitemap": {
+   "url": "/sitemap.xml",
+   "locals": {},
+   "type": "application/xml"
+  },
+  "error": {
+   "url": "",
+   "locals": {
+    "pageTitle": "{{{error.title}}} - {{{title}}}",
+    "pageDescription": "Error on {{{title}}}"
+   },
+   "type": "text/html"
+  },
+  "script": {
+   "url": "/script.js",
+   "locals": {},
+   "type": "application/javascript"
+  },
   "header": {
    "url": "",
    "locals": {},
@@ -100,19 +109,6 @@
    },
    "type": "text/html"
   },
-  "entry": {
-   "url": "",
-   "locals": {
-    "pageTitle": "{{{entry.title}}} - {{{title}}}",
-    "pageDescription": "{{{entry.summary}}}"
-   },
-   "type": "text/html"
-  },
-  "script": {
-   "url": "/script.js",
-   "locals": {},
-   "type": "application/javascript"
-  },
   "tagcloud": {
    "url": "/tagcloud",
    "locals": {
@@ -121,13 +117,15 @@
    },
    "type": "text/html"
   },
-  "search": {
-   "url": "",
-   "locals": {
-    "pageTitle": "Search - {{{title}}}",
-    "pageDescription": "Seach all the entries posted on {{{title}}}"
-   },
-   "type": "text/html"
+  "feed": {
+   "url": "/feed.rss",
+   "locals": {},
+   "type": "application/xml"
+  },
+  "robots": {
+   "url": "/robots.txt",
+   "locals": {},
+   "type": "text/plain"
   }
  }
 }
