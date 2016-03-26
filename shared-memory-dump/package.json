@@ -52,6 +52,11 @@
    },
    "type": "text/html"
   },
+  "tweetfeed": {
+   "url": "/tweetfeed.rss",
+   "locals": {},
+   "type": "application/xml"
+  },
   "archives": {
    "url": "/archives",
    "locals": {
