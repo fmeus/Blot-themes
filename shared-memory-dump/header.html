@@ -11,11 +11,11 @@
       <a href="/archives" title="Archives"><i class="fa fa-archive"></i> Archives</a>
       <a href="/tagcloud" title="Tags"><i class="fa fa-tags"></i> Tags</a>
       {{#menu}}
-      <a href="{{{url}}}" title="{{label}}">{{#metadata.icon}}<i class="fa {{metadata.icon}}"></i> {{/metadata.icon}}{{label}}</a>
+      <a href="{{{url}}}" title="{{label}}">{{#metadata.icon}}<i class="fa {{metadata.icon}}" aria-hidden="true" height="20px" width="20px"></i> {{/metadata.icon}}{{label}}</a>
       {{/menu}}
       <div class="right">
         <a class="search" href="/search" title="Search {{title}}">Search</a>
-        <a class="feed" href="{{feedURL}}" title="RSS feed for  {{title}}">Feed</a>
+        <a class="feed" href="{{{feedURL}}}" title="RSS feed for {{title}}">Feed</a>
       </div>
     </div>
   </div>
