@@ -740,6 +740,12 @@ span.day {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
 }
 
+/* Styling for menu icons */
+.header .fa {
+  width: 15px;
+  height: 15px;
+}
+
 /* Styling the continue reading link */
 a.more {
   background-image: none;
