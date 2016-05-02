@@ -760,6 +760,10 @@ a.more {
   text-shadow: none;
 }
 
+/* Tips from David */
+th a {text-shadow: none}
+td a {text-shadow: none}
+
 /* Hide certain elements when printing */
 @media print
 {    
