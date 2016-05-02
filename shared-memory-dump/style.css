@@ -226,7 +226,7 @@ li {margin: 0}
 
 /* IMAGES */
 
-img {vertical-align: middle;max-width: 100%;}
+img {vertical-align: middle;max-width: 100%; height:auto;}
 
 .image {
   position: relative;
