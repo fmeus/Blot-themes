@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 <channel>
   <title>{{title}}</title>
   <link>{{blogURL}}</link>
@@ -14,7 +14,7 @@
     <title>{{title}}</title>
     <link>{{blogURL}}{{url}}</link>
     <guid>{{blogURL}}/{{id}}</guid>
-    <pubDate>{{dateUTC}}</pubDate>
+    <pubDate>{{#formatDate}}ddd, DD MMM YYYY HH:mm:ss ZZ{{/formatDate}}</pubDate>
     <description>{{body}}</description>
   </item>
   {{/recentEntries}}
