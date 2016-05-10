@@ -7,7 +7,8 @@
       <div class="main">
         <div class="entry">
         {{#entry}}
-            <div class="left margin">
+
+            <div class="left margin" {{#menu}}style="display: none"{{/menu}}>
               <div class="calendar">
                 <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
                 <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
@@ -68,6 +69,7 @@
         <div class="clear"></div>
         {{> pluginHTML}}
         {{> footer}}
+
       </div>
     </div>
   </body>
