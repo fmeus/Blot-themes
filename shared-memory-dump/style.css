@@ -621,25 +621,6 @@ blockquote {
   text-decoration: none;
 }
 
-/* Colors and alignment for sharing buttons */
-.fa-smd-twitter {
-  color: rgba(33, 162, 207, 1);
-  line-height:1.4;
-}
-.fa-smd-facebook {
-  color: rgba(78, 104, 163, 1);
-  line-height:1.4;
-}
-.fa-smd-googleplus {
-  color: rgba(215, 65, 59, 1);
-  line-height:1.4;
-}
-
-.fa-smd-tumblr {
-  color: rgba(53, 70, 92, 1);
-  line-height:1.4;
-}
-  
 /* Styling of U tag */
 u {
   text-decoration: underline;
@@ -764,10 +745,32 @@ a.more {
 th a {text-shadow: none}
 td a {text-shadow: none}
 
+/* Share buttons */
+.twitter-color { color: rgba(33, 162, 207, 1); }
+.facebook-color { color: rgba(78, 104, 163, 1); }
+.googleplus-color { color: rgba(215, 65, 59, 1); }
+.tumblr-color { color: rgba(53, 70, 92, 1); }
+.bg-color { color: white; }
+
+.shareButtons {
+  margin: 0px;
+  font-size: 0.8em;
+}
+
+.shareButtons a { 
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none;
+  padding: 0px;
+  border-spacing: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+
 /* Hide certain elements when printing */
 @media print
 {    
-    .shareButtons, .previousEntry, #disqus_thread
+    .shareButtons, .previousEntry, #disqus_thread, .tribute
     {
         display: none !important;
     }
