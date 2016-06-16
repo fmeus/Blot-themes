@@ -746,14 +746,17 @@ th a {text-shadow: none}
 td a {text-shadow: none}
 
 /* Share buttons */
-.twitter-color { color: rgba(33, 162, 207, 1); }
+.bg-color { color: white; }
 .facebook-color { color: rgba(78, 104, 163, 1); }
 .googleplus-color { color: rgba(215, 65, 59, 1); }
+.mail-color { color: rgba(0, 102, 255, 1); }
+.pocket-color { color: rgba(238, 64, 85, 1); }
+.print-color { color: rgba(147, 149, 152, 1); }
 .tumblr-color { color: rgba(53, 70, 92, 1); }
-.bg-color { color: white; }
+.twitter-color { color: rgba(33, 162, 207, 1); }
 
 .shareButtons {
-  margin: 0px;
+  margin: 10px 0px 0px;
   font-size: 0.8em;
 }
 
