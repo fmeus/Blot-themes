@@ -19,9 +19,11 @@
           </div>
           <h1><a class="title" href="{{url}}">{{title}}</a></h1>
           {{{teaserBody}}}
+
           {{#more}}
           <div class="more"><a class="more" href="{{url}}">Read the rest of this post <i class="fa fa-arrow-right"></i></a></div>
           {{/more}}
+
           {{#tags.length}}
           <div style="font-size: 10pt;margin-top: 5px;">
             <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
@@ -42,8 +44,10 @@
           {{/next}}
         </div>
         {{/pagination}}
+
         {{> footer}}
       </div>
     </div>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
