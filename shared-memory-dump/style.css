@@ -407,7 +407,7 @@ a.tag {
   }
 
   .entry .margin.left {
-    text-align: left;
+    text-align: justify;
     display: block;
     float: left;
   }
