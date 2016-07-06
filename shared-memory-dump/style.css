@@ -511,6 +511,8 @@ table tr:hover td {
   background-color: rgb(200, 200, 200);
 }
 
+td { text-align: left; }
+
 /* Styling of tags */
 span.badge {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
