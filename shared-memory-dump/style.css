@@ -378,7 +378,7 @@ input#search:focus {
 .previousEntry {margin: 1em 2% 6em 0;}
 
 .adjacent a h5 {margin-bottom: 3px;color: #000}
-.adjacent a .summary {color: #6B6B6B;font-size: 13px;line-height: 17px;}
+.adjacent a .summary {color: #6B6B6B; font-size: 13px; line-height: 17px;}
 
 .previousEntry .title,
 .nextEntry .title {
@@ -756,6 +756,7 @@ td a {text-shadow: none}
 .print-color { color: rgba(147, 149, 152, 1); }
 .tumblr-color { color: rgba(53, 70, 92, 1); }
 .twitter-color { color: rgba(33, 162, 207, 1); }
+.reddit-color { color: rgba(95, 153, 207, 1); }
 
 .shareButtons {
   margin: 10px 0px 0px;
