@@ -642,28 +642,34 @@ h2.archive {
   font-variant: small-caps;
 }
 
-div.archive:nth-of-type(1n+4) {
-  display: none;
+a.archive {
+  font-size: medium;
 }
-    
+
+label {
+  font-size: smaller;
+  font-weight: bold;
+  font-variant: normal;
+  cursor: pointer;
+  border-bottom: 1px dotted blue;
+}
+
 span.archive {
   font-size: medium;
   font-weight: bold;
   margin-left: 20px;
 }
 
-span.count {
-  font-size: smaller;
-  font-weight: bold;
-  font-variant: normal;
-  cursor: pointer;
-  cursor: hand;
-  border-bottom: 1px dotted blue;
-}
+/* Hide the checkboxes */
+.opener { display:none; }
 
-a.archive {
-  font-size: medium;
-}
+/* First three months */
+.month:nth-child(-n+3) .entries { display:block; }
+.month:nth-child(-n+3) .opener:checked ~ .entries { display:none; }
+
+/* All except the first three months */
+.month:nth-child(1n+4) .entries { display:none; }
+.month:nth-child(1n+4) .opener:checked ~ .entries { display:block; }
 
 /* Styling for calendar badge */
 div.calendar {

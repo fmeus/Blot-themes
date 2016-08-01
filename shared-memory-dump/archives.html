@@ -7,27 +7,23 @@
       <div class="main">
         <h1>Archives</h1>
         <div>
-            {{#archives}}
-              {{#months}}
-                <h2 class="archive">{{month}} {{year}} <span title="Click to hide/show posts" class="count" id="{{month}}{{year}}">({{entries.length}} posts)</span></h2>
-                <div class="archive" id="{{month}}{{year}}">
-                {{#entries}}
-                    <span class="archive">{{#formatDate}}DD{{/formatDate}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
-                {{/entries}}
-                </div>
-              {{/months}}
-            {{/archives}}
+          {{#archives}}
+            {{#months}}
+            <div class="month">
+              <h2 class="archive">{{month}} {{year}} <label for="{{month}}{{year}}" title="Click to hide/show posts">({{entries.length}} posts)</label></h2>
+              <input class="opener" type="checkbox" id="{{month}}{{year}}"/>
+              <div class="entries">
+              {{#entries}}
+                <span class="archive">{{#formatDate}}DD{{/formatDate}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br/>
+              {{/entries}}
+              </div>
+            </div>
+            {{/months}}
+          {{/archives}}
         </div>
         <p/>
         {{> footer}}
       </div>
     </div>
-
-    <script>
-    $('span.count').click(function() {
-      var id = $(this).prop('id');
-      $( 'div#'+id ).toggle();
-    });
-    </script>
   </body>
 </html>
