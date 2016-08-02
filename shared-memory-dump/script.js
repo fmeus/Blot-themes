@@ -14,16 +14,6 @@ $('pp').each(
 	}
 );
 
-// Add dropshadow to images ending with `-ds`
-$('img').each(function() {
-	var filename = $(this).attr('src');
-	var imgName = filename.substr(0, filename.lastIndexOf('.')) || filename;
-
-	if ( imgName.substr(imgName.length - 3) == '-ds' ) {
-		$(this).addClass('dropshadow');
-	}
-});
-
 // Update title attribtue using alt attribute if not already set
 $('img').each(function() {
 	var title = $(this).prop('title');
