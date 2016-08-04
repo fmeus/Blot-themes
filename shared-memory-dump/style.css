@@ -727,6 +727,7 @@ span.day {
 /* Dropshadows */
 img[src*="-ds."] {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+  margin: 15px 0px;
 }
 
 /* Styling for menu icons */
