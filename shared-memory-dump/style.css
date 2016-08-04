@@ -541,12 +541,7 @@ br.floatlist {
 }
 
 /* Styling of external links */
-a[target=_blank]:not(.btn) {
-    margin-right: 1em;
-}
-
 a[target=_blank]:not(.btn):after {
-  position: absolute;
   font-family: FontAwesome;
   font-size: 0.8em;
   color: rgb(128, 137, 146);
@@ -559,6 +554,8 @@ a[target=_blank]:not(.btn):after {
   -o-transform: scale(-1, 1);
   transform: scale(-1, 1);
   background-image: none;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* Hiding custom tags */
