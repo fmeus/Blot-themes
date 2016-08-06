@@ -26,9 +26,9 @@
           {{> sharebuttons}}
 
           {{#tags.length}}
-          <p style="font-size: 10pt;">
-          <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
-          </p>
+          <div style="font-size: 10pt;margin-top: 10px;">
+            <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
+          </div>
           {{/tags.length}}
 
           {{#adjacent}}
@@ -56,7 +56,6 @@
         <div class="clear"></div>
         {{> pluginHTML}}
         {{> footer}}
-
       </div>
     </div>
   </body>
