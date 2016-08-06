@@ -24,11 +24,7 @@
           <div class="more"><a class="more" href="{{url}}">Read the rest of this post <i class="fa fa-arrow-right"></i></a></div>
           {{/more}}
 
-          {{#tags.length}}
-          <div class="tags">
-            <i class="fa fa-tags"></i> {{#tags}}<code><a class="title" href="/tagged/{{slug}}">{{name}}</a></code> {{/tags}}
-          </div>
-          {{/tags.length}}
+          {{> tags}}
           <div class="clear">
           </div>
         </div>
