@@ -545,7 +545,7 @@ br.floatlist {
 /* Styling of external links */
 a[target=_blank]:not(.btn):after {
   font-family: FontAwesome;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: rgb(128, 137, 146);
   text-shadow: 1px 1px 1px silver;
   margin-left: 0.2em;
@@ -632,6 +632,11 @@ span.update {
   color: #aaa;
   font-style: italic;
   font-size: small;
+}
+
+.tags {
+  font-size: 10pt;
+  margin-top: 10px;
 }
 
 /* Styling for the archive page */
