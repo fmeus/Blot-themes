@@ -355,7 +355,7 @@ input#search:focus {
 /* Pagination */
 .pagination {
   text-align: center;
-  margin: 72px 0 144px;
+  margin: 40px 0px;
   font-size: 14px;color: #999
 }
 
