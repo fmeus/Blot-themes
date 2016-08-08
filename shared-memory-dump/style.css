@@ -369,13 +369,13 @@ input#search:focus {
   font-size: 0.88em;
   line-height: 1.33em;
   width: 48%;
-  margin: 1em 0 6em 2%;
+  margin: 0 0 3em 2%;
   color: #000;
   display: block;
   float: left;
 }
 
-.previousEntry {margin: 1em 2% 6em 0;}
+.previousEntry {margin: 0 2% 3em 0;}
 
 .adjacent a h5 {margin-bottom: 3px;color: #000}
 .adjacent a .summary {color: #6B6B6B; font-size: 13px; line-height: 17px;}
@@ -388,6 +388,8 @@ input#search:focus {
   line-height: 20px;
   margin-bottom: 3px
 }
+
+a h5 { line-height: 24px;margin: 20px 0 24px }
 
 a.tag {
   padding-left: 1.33em;
@@ -696,7 +698,7 @@ div.calendar {
   text-align: center;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   vertical-align:middle;
   color: white;
   display: block;
