@@ -641,6 +641,10 @@ span.update {
   margin-top: 10px;
 }
 
+.fa-tags {
+  color: rgba(38, 127, 121, 1);
+}
+
 /* Styling for the archive page */
 h2.archive {
   margin-bottom: 0px;
