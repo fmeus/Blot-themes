@@ -794,7 +794,13 @@ td a {text-shadow: none}
 
 /* Progression bar */
 progress {
-  width: 50px;
+  width: 100px;
+}
+
+.status {
+  font-size: x-small;
+  font-weight: bold;
+  color: gray;
 }
 
 /* Hide certain elements when printing */
