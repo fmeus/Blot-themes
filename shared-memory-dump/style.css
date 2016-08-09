@@ -792,6 +792,11 @@ td a {text-shadow: none}
   display: inline-block;
 }
 
+/* Progression bar */
+progress {
+  width: 50px;
+}
+
 /* Hide certain elements when printing */
 @media print
 {    
