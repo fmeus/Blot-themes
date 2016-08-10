@@ -803,6 +803,16 @@ progress {
   color: gray;
 }
 
+/* Alignment classes */
+
+.aligntop {
+  vertical-align: top;
+}
+
+.alignleft {
+  text-align: left;
+}
+
 /* Hide certain elements when printing */
 @media print
 {    
