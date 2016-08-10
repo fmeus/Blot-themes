@@ -9,7 +9,7 @@
         <div class="floatlist">
           <ul>
             {{#allTags}}
-            <li><a href="/tagged/{{name}}">{{name}}</a> <span class="badge">{{entries.length}}</span></li>
+            <li><a href="/tagged/{{#encodeURIComponent}}{{name}}{{/encodeURIComponent}}">{{name}}</a> <span class="badge">{{entries.length}}</span></li>
             {{/allTags}}
           </ul>
         </div>
