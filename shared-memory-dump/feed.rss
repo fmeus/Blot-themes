@@ -13,7 +13,7 @@
   <item>
     <title>{{title}}</title>
     <link>{{blogURL}}{{url}}</link>
-    <guid>{{blogURL}}/{{id}}</guid>
+    <guid>{{blogURL}}{{url}}</guid>
     <pubDate>{{#formatDate}}ddd, DD MMM YYYY HH:mm:ss ZZ{{/formatDate}}</pubDate>
     <description>{{body}}</description>
   </item>
