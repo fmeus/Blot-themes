@@ -683,6 +683,14 @@ span.archive {
 .month:nth-child(1n+4) .entries { display:none; }
 .month:nth-child(1n+4) .opener:checked ~ .entries { display:block; }
 
+/* Styling for Disqus comments count */
+.comments {
+  color: black;
+  display: block;
+  padding-top: 5px;
+  font-size: xx-small;
+}
+
 /* Styling for calendar badge */
 div.calendar {
   background-color: rgba(236, 236, 236, 1);
