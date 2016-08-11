@@ -113,7 +113,7 @@ p, li {
   margin: 24px 0;
 }
 
-h1 {font-size: 25px;line-height: 36px;font-weight: bold;margin-bottom: 24px}
+h1 {font-size: 25px;line-height: 36px;font-weight: bold;margin-bottom: 24px; text-align: left;}
 
 h2, h3, h4, h5, h6 {font-size: 17px;font-weight: bold;line-height: 24px;margin: 48px 0 24px}
 
@@ -430,7 +430,10 @@ a.tag {
   ul, li {margin-left: 24px}
   ul ul, ol ul, ol ol, ul ol {margin-left: 0}
   .nav .right {clear: both;float: none;margin-top: 3px}
+  .margin { width: 20%; }
+  .left.margin { left: 5%; text-align: right; }
   a.search {margin-left: 0}
+  p, li {font-family: Georgia, serif; position: relative; margin: 10px 0; }
 }
 
 @media screen and (max-width: 400px) {
@@ -438,7 +441,7 @@ a.tag {
   .header {margin: 9px auto -12px}
   .margin { width: 20%; }
   .left.margin { left: 5%; text-align: right; }
-  h1 { text-align: left; }
+  p, li {font-family: Georgia, serif; position: relative; margin: 10px 0; }
 }
 
 /* Styling for Google Code Prettify */
@@ -773,6 +776,14 @@ a.more {
 /* Tips from David */
 th a {text-shadow: none}
 td a {text-shadow: none}
+
+/* Hack to fix some layout issues */
+br.fix-h1 {
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
 
 /* Share buttons */
 .bg-color { color: white; }
