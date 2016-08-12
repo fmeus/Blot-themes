@@ -277,6 +277,7 @@ iframe {width: 100%;}
 #logo img.rounded {
   width: 52px;
   border-radius: 50%;
+  border: 3px solid #738d8f;
   top: -2px;
   left: -64px;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
