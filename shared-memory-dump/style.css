@@ -802,18 +802,17 @@ br.fix-h1 {
 }
 
 /* Share buttons */
-.bg-color { color: white; }
-.delicious-color { color: rgba(42, 150, 255, 1); }
-.digg-color { color: rgba(84, 107, 160, 1); }
-.facebook-color { color: rgba(78, 104, 163, 1); }
-.googleplus-color { color: rgba(215, 65, 59, 1); }
-.mail-color { color: rgba(0, 102, 255, 1); }
-.pinterest-color { color: rgba(190, 33, 39, 1); }
-.pocket-color { color: rgba(238, 64, 85, 1); }
-.print-color { color: rgba(147, 149, 152, 1); }
-.reddit-color { color: rgba(95, 153, 207, 1); }
-.tumblr-color { color: rgba(53, 70, 92, 1); }
-.twitter-color { color: rgba(33, 162, 207, 1); }
+.delicious-color { background-color: rgba(42, 150, 255, 1); }
+.digg-color { background-color: rgba(84, 107, 160, 1); }
+.facebook-color { background-color: rgba(78, 104, 163, 1); }
+.googleplus-color { background-color: rgba(215, 65, 59, 1); }
+.mail-color { background-color: rgba(0, 102, 255, 1); }
+.pinterest-color { background-color: rgba(190, 33, 39, 1); }
+.pocket-color { background-color: rgba(238, 64, 85, 1); }
+.print-color { background-color: rgba(147, 149, 152, 1); }
+.reddit-color { background-color: rgba(95, 153, 207, 1); }
+.tumblr-color { background-color: rgba(53, 70, 92, 1); }
+.twitter-color { background-color: rgba(33, 162, 207, 1); }
 
 .shareButtons {
   margin: 20px 0px 0px;
@@ -823,11 +822,24 @@ br.fix-h1 {
 .shareButtons a { 
   text-shadow: none;
   text-decoration: none;
+  color: white;
   background-image: none;
   padding: 0px;
   border-spacing: 0px;
   margin: 0px;
   display: inline-block;
+}
+
+.shadow {
+  display: inline-block;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow:         2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Progression bar */
