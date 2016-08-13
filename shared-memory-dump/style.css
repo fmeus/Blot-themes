@@ -803,12 +803,12 @@ br.fix-h1 {
 
 /* Share buttons */
 .bg-color { color: white; }
-.delicious-color { rgba(42, 150, 255, 1); }
-.digg-color { rgba(84, 107, 160, 1); }
+.delicious-color { color: rgba(42, 150, 255, 1); }
+.digg-color { color: rgba(84, 107, 160, 1); }
 .facebook-color { color: rgba(78, 104, 163, 1); }
 .googleplus-color { color: rgba(215, 65, 59, 1); }
 .mail-color { color: rgba(0, 102, 255, 1); }
-.pinterest-color { rgba(190, 33, 39, 1); }
+.pinterest-color { color: rgba(190, 33, 39, 1); }
 .pocket-color { color: rgba(238, 64, 85, 1); }
 .print-color { color: rgba(147, 149, 152, 1); }
 .reddit-color { color: rgba(95, 153, 207, 1); }
