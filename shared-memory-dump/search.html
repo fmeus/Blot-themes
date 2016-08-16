@@ -12,13 +12,14 @@
           {{#query}}
             {{^entries}}
             <p>Sorry, nothing found for “{{query}}”</p>
-            {{/entries}}
+            {{/entries}} 
+            Found {{entries.length}} posts with “{{query}}”<br />
           {{/query}}
 
           {{#entries}}
-            <a href="{{url}}">{{title}}</a>
-            <span class="small">{{date}}</span>
-            <br />
+            {{#date}}
+              <span class="archive">{{date}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br />
+            {{/date}}
           {{/entries}}
         </div>
         <p>
