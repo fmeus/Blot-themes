@@ -418,6 +418,16 @@ a.tag {
   p, li {font-family: Georgia, serif; position: relative; margin: 40px 0; }
 }
 
+@media screen and (max-width: 730px) {
+  .nav, #logo {margin-left: 60px}
+  .margin { width: 20%; }
+  .entry .twitter-tweet {margin-left: 0!important}
+  .header {margin: 9px auto -12px}
+  .margin { width: 20%; }
+  .left.margin { left: 5%; text-align: right; }
+  p, li {font-family: Georgia, serif; position: relative; margin: 10px 0; }
+}
+
 @media screen and (max-width: 400px) {
   .entry .twitter-tweet {margin-left: 0!important}
   .header {margin: 9px auto -12px}
