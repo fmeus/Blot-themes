@@ -8,7 +8,7 @@
         <div class="entry">
         {{#entry}}
           <div>
-            <div class="calendar">
+            <div class="calendar" {{#menu}}style="display: none"{{/menu}}>
               <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
               <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
               <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
@@ -16,7 +16,7 @@
                 <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-url="{{blogURL}}{{url}}">0</span>
               </span>
             </div>
-            <h1 class="title"><a class="title" href="{{url}}">{{title}}</a><br class="fix-h1"/></h1>
+            <h1 {{^menu}}class="title"{{/menu}}><a class="title" href="{{url}}">{{title}}</a><br class="fix-h1"/></h1>
           </div>
 
           {{{body}}}
