@@ -409,41 +409,14 @@ a.tag {
 
 
 @media screen and (max-width: 976px) {
-
   .main {max-width: 600px;min-width: 0}
 
-  .entry .margin {position: relative;top: auto;left: auto;right: auto;bottom: auto;}
-
-  .entry .margin.right {
-    float: right;
-  }
-
-  .entry .margin.left {
-    text-align: justify;
-    display: block;
-    float: left;
-  }
-
-  .entry .date {width: 100%;}
-
-  .entry .margin .caption,
-  .entry .margin p {margin-bottom: 6px;text-align: left;}
-
-  .wide, .wide.left, .wide.right {width: 100%;margin: 0}
-  .wide.left .caption {margin-left: 0}
-
-  .date {position: absolute;top: -24px;left: 0;text-align: left;margin: 0}
-}
-
-@media screen and (max-width: 730px) {
-  .nav, #logo {margin-left: 60px}
-  ul, li {margin-left: 24px}
-  ul ul, ol ul, ol ol, ul ol {margin-left: 0}
-  .nav .right {clear: both;float: none;margin-top: 3px}
+  .entry .twitter-tweet {margin-left: 0!important}
+  .header {margin: 9px auto -12px}
   .margin { width: 20%; }
-  .left.margin { left: 5%; text-align: right; }
-  a.search {margin-left: 0}
-  p, li {font-family: Georgia, serif; position: relative; margin: 10px 0; }
+  .left.margin { left: -40px; text-align: right; }
+  p, li {font-family: Georgia, serif; position: relative; margin: 40px 0; }
+  h1 {padding-left: 60px;}
 }
 
 @media screen and (max-width: 400px) {
