@@ -577,7 +577,7 @@ kbd
 
 /* Anchor tag surrounding H1 should be black */
 h1.title {
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 a.title {
