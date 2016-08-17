@@ -813,6 +813,13 @@ br.fix-h1 {
 .reddit-color { background-color: rgba(95, 153, 207, 1); }
 .tumblr-color { background-color: rgba(53, 70, 92, 1); }
 .twitter-color { background-color: rgba(33, 162, 207, 1); }
+.buffer-color { 
+  background-color: rgba(50, 59, 67, 1);
+  background-image: url('/public/buffer-logo.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
+}
 
 .shareButtons {
   margin: 20px 0px 0px;
