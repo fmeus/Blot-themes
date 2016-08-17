@@ -408,7 +408,7 @@ a.tag {
 }
 
 
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 800px) {
   .main {max-width: 600px;min-width: 0}
 
   .entry .twitter-tweet {margin-left: 0!important}
