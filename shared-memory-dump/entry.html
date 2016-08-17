@@ -7,19 +7,17 @@
       <div class="main">
         <div class="entry">
         {{#entry}}
-
-            <div class="left margin" {{#menu}}style="display: none"{{/menu}}>
-              <div class="calendar">
-                <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
-                <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
-                <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
-                <span class="comments">
-                  <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-url="{{blogURL}}{{url}}">0</span>
-                </span>
-              </div>
+          <div>
+            <div class="calendar">
+              <span class="month">{{#formatDate}}MMM{{/formatDate}}</span>
+              <span class="day">{{#formatDate}}DD{{/formatDate}}</span>
+              <span class="year">{{#formatDate}}YYYY{{/formatDate}}</span>
+              <span class="comments">
+                <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-url="{{blogURL}}{{url}}">0</span>
+              </span>
             </div>
-          
-          <h1>{{title}}<br class="fix-h1"/></h1>
+            <h1 class="title"><a class="title" href="{{url}}">{{title}}</a></h1>
+          </div>
 
           {{{body}}}
 

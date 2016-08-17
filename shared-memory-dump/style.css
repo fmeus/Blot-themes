@@ -416,7 +416,6 @@ a.tag {
   .margin { width: 20%; }
   .left.margin { left: -40px; text-align: right; }
   p, li {font-family: Georgia, serif; position: relative; margin: 40px 0; }
-  h1 {padding-left: 60px;}
 }
 
 @media screen and (max-width: 400px) {
@@ -577,6 +576,10 @@ kbd
 }
 
 /* Anchor tag surrounding H1 should be black */
+h1.title {
+  margin-left: 50px;
+}
+
 a.title {
   color: black;
   background-image: none;
@@ -698,11 +701,10 @@ div.calendar {
   text-align: center;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 30px;
   vertical-align:middle;
   color: white;
   display: block;
-  float: right;
+  float: left;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
