@@ -289,7 +289,7 @@ iframe {width: 100%;}
 
 /* Nav links are underlined which affects their optical lineheight */
 .nav {line-height: 20px;padding-bottom: 4px}
-.nav a {margin-right: 6px;font-size: 14px;background: none;text-shadow: none;}
+.nav a {margin-right: 6px;font-size: 14px;background: none;text-shadow: none; white-space: nowrap;}
 
 a.feed,
 a.search {
