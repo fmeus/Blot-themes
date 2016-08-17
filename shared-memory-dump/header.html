@@ -7,11 +7,11 @@
       <span class="title">{{title}}</span>
     </a>
     <div class="nav">
-      <a href="/" title="Home"><i class="fa fa-home fa-fw"></i> Home</a>
-      <a href="/archives" title="Archives"><i class="fa fa-archive fa-fw"></i> Archives</a>
-      <a href="/tagcloud" title="Tags"><i class="fa fa-tags fa-fw"></i> Tags</a>
+      <a href="/" title="Home" style="white-space: nowrap;"><i class="fa fa-home fa-fw"></i> Home</a>
+      <a href="/archives" title="Archives" style="white-space: nowrap;"><i class="fa fa-archive fa-fw"></i> Archives</a>
+      <a href="/tagcloud" title="Tags" style="white-space: nowrap;"><i class="fa fa-tags fa-fw"></i> Tags</a>
       {{#menu}}
-      <a href="{{{url}}}" title="{{label}}">{{#metadata.icon}}<i class="fa {{metadata.icon}} fa-fw" aria-hidden="true"></i>{{/metadata.icon}} {{label}}</a>
+      <a href="{{{url}}}" title="{{label}}" style="white-space: nowrap;">{{#metadata.icon}}<i class="fa {{metadata.icon}} fa-fw" aria-hidden="true"></i>{{/metadata.icon}} {{label}}</a>
       {{/menu}}
       <div class="right">
         <a class="search" href="/search" title="Search {{title}}">Search</a>
