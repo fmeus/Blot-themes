@@ -129,12 +129,6 @@ li .small-caps {
   letter-spacing: 0.02em;
 }
 
-/*
-p .small-caps,
-li .small-caps {
-  font-family: "Georgia Pro SC";
-}*/
-
 big {color: #000;font-size: 32px;font-family: Georgia;line-height: 48px;display: block;}
 
 /* Hanging punctuation */
