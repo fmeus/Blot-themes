@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 <channel>
-  <title>{{title}}</title>
+  <title><![CDATA[ {{{title}}} ]]</title>
   <link>{{blogURL}}</link>
   <description>The feed of updates to {{name}}'s blog.</description>
+  <atom:link href="{{blogURL}}/feed.rss" rel="self" type="application/rss+xml"/>
   <updated>{{updated}}</updated>
   <id>{{blogURL}}</id>
   <author>
-  <name>{{name}}</name>
+  <name><![CDATA[ {{name}} ]]</name>
   </author>
   {{#recentEntries}}
     {{#metadata.twitter}}
       <item>
-        <title>{{title}}</title>
-        <link>{{blogURL}}{{url}}</link>
-        <guid>{{blogURL}}/{{id}}</guid>
+        <title><![CDATA[ {{{title}}} ]]</title>
+        <link>{{{blogURL}}}{{url}}</link>
+        <guid>{{{blogURL}}}{{id}}</guid>
         <pubDate>{{#formatDate}}ddd, DD MMM YYYY HH:mm:ss ZZ{{/formatDate}}</pubDate>
+        <dc:creator><![CDATA[ {{{name}}} ]]></dc:creator>
       </item>
     {{/metadata.twitter}}
   {{/recentEntries}}
