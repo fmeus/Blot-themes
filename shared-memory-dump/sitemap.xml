@@ -5,15 +5,19 @@
   </url>
   <url>
     <loc>{{blogURL}}/archives/</loc> 
+    <changefreq>daily</changefreq> 
   </url>
-  {{#pages}}  
+  {{#menu}}  
   <url>
-    <loc>{{blogURL}}{{url}}/</loc> 
+    <loc>{{blogURL}}{{url}}/</loc>
+    <lastmod>{{#formatDate}}YYYY-MM-DD{{/formatDate}}</lastmod> 
+    <changefreq>daily</changefreq>
   </url>
-  {{/pages}}    
+  {{/menu}}    
   {{#allEntries}}  
   <url>
     <loc>{{blogURL}}{{url}}/</loc> 
+    <lastmod>{{#formatDate}}YYYY-MM-DD{{/formatDate}}</lastmod> 
   </url>
   {{/allEntries}}  
 </urlset>
