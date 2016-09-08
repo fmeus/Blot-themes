@@ -663,7 +663,9 @@ label {
 span.archive {
   font-size: medium;
   font-weight: bold;
-  margin-left: 20px;
+  display: table-cell;
+  text-indent: 20px;
+  float: left;
 }
 
 /* Hide the checkboxes */
