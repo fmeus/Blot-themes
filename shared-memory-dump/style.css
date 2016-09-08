@@ -806,10 +806,6 @@ br.fix-h1 {
   text-decoration: none;
   color: white;
   background-image: none;
-  padding: 0px;
-  border-spacing: 0px;
-  margin: 0px;
-  display: inline-block;
 }
 
 .shadow {
