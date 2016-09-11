@@ -834,6 +834,25 @@ progress {
   color: gray;
 }
 
+/* Styling for 'Scroll to top' */
+a.top, a.top:visited, a.top:hover, a.top:active {
+  text-shadow: none;
+  background-image: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+div.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.4;
+  background-color: silver;
+  border-radius: 5px;
+}
+
 /* Alignment classes */
 
 .aligntop {
