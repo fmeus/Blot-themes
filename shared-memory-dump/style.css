@@ -839,17 +839,19 @@ a.top, a.top:visited, a.top:hover, a.top:active {
   text-shadow: none;
   background-image: none;
   text-decoration: none;
-  color: black;
+  color: rgba(0,0,0, 0.4);
   margin-left: 4px;
   margin-right: 4px;
+}
+a.top:hover, a.top:active {
+  color: rgba(0,0,0, 0.8);
 }
 
 div.top {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  opacity: 0.4;
-  background-color: silver;
+  background-color: rgba(192,192,192, 0.4);
   border-radius: 5px;
 }
 
