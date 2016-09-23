@@ -3,7 +3,7 @@
     <title>{{> title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Metdata used by Google -->
+    <!-- Metadata used by Google -->
     <meta name="description" content="{{> description}}" />
     <meta name="keywords" content="{{#entry}}{{#tags.length}}{{#tags}}{{name}},{{/tags}}{{/tags.length}}{{/entry}}" />
     <meta name="author" content="{{name}}" />
@@ -30,8 +30,6 @@
 
     {{> favicons}}
 
-    <!-- Font Awesome CDN
-         Please use your own, register for free at http://fontawesome.io/get-started/
-    -->
-    <script src="https://use.fontawesome.com/c8287c1d71.js"></script>
+    <!-- Font-awesome via async loading -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
