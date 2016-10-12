@@ -865,10 +865,13 @@ div.top {
   text-align: left;
 }
 
-#warning {
+#warning:not(:empty) {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
+  background-color: rgba(192,192,192, 0.4);
   color: red;
+  display: block;
+  padding: 4px;
 }
 
 /* Hide certain elements when printing */
