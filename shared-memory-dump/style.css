@@ -1,7 +1,7 @@
 {{{appCSS}}}
 
 body {
-  font: 17px / 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 17px / 24px "Helvetica Neue", Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga";
@@ -14,7 +14,7 @@ body {
 .clear {width: 100%;clear: both;float: none;display: block;height: 0}
 
 .small,
-.caption {font-size: 13px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #999;font-weight: 500;}
+.caption {font-size: 13px;font-family: "Helvetica Neue", Arial, sans-serif;color: #999;font-weight: 500;}
 
 .caption {
   line-height: 18px;
@@ -311,7 +311,7 @@ input#search {
   box-sizing: border-box;
   margin: .33em .66em 2em -1em;
   border: 1px solid #A1ADB6;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 input#search:focus {
@@ -505,7 +505,7 @@ td p { margin-top: 0px; }
 
 /* Styling of tags */
 span.badge {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   padding: 2px 4px 2px 4px;
   border: 1px solid gray;
