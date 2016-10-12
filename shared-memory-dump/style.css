@@ -872,6 +872,7 @@ div.top {
   color: red;
   display: block;
   padding: 4px;
+  border: 2px solid red;
 }
 
 /* Hide certain elements when printing */
