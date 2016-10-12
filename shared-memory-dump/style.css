@@ -865,6 +865,12 @@ div.top {
   text-align: left;
 }
 
+#warning {
+  font-weight: bold;
+  font-size: 15px;
+  color: red;
+}
+
 /* Hide certain elements when printing */
 @media print
 {    
