@@ -875,6 +875,14 @@ div.top {
   border: 2px solid red;
 }
 
+/* App Store Icon */
+.appicon {
+  border-radius      : 18px;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
+}
+
 /* Hide certain elements when printing */
 @media print
 {    
