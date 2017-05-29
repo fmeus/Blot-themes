@@ -13,13 +13,13 @@
             {{^entries}}
             <p>Sorry, nothing found for “{{query}}”</p>
             {{/entries}} 
-            Found {{entries.length}} posts with “{{query}}”<br />
+            Found {{entries.length}} posts with “{{query}}”<br /><br />
           {{/query}}
 
           {{#sort:date}}
             {{#entries}}
               {{#date}}
-                <span class="archive">{{date}}:</span> <a class="archive" href="{{url}}">{{title}}</a><br />
+                <span class="archive">{{date}}:</span>&nbsp;<a class="archive" href="{{url}}">{{title}}</a><br />
               {{/date}}
             {{/entries}}
           {{/sort:date}}
