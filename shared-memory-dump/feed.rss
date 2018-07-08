@@ -7,7 +7,6 @@
   <link>{{{blogURL}}}</link>
   <description><![CDATA[ The feed of updates to {{name}}'s blog. ]]></description>
   <atom:link href="{{{blogURL}}}/feed.rss" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>{{updated}}</lastBuildDate>
   {{#recentEntries}}
   <item>
     <title><![CDATA[ {{{title}}} ]]></title>
