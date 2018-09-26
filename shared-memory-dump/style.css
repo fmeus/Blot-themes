@@ -532,20 +532,10 @@ br.floatlist {
 
 /* Styling of external links */
 a[target=_blank]:not(.btn):after {
-  font-family: FontAwesome;
-  font-size: 0.7em;
-  color: rgb(128, 137, 146);
-  text-shadow: 1px 1px 1px silver;
+  content: url(/public/link.png);
+  vertical-align: text-top;
+  font-size: 50%;
   margin-left: 0.2em;
-  content:"\F0C1";
-  -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-  background-image: none;
-  display: inline-block;
-  vertical-align: top;
 }
 
 /* Hiding custom tags */
