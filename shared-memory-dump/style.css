@@ -732,26 +732,26 @@ span.day {
 }
 
 /* Image styling based on classes in image URL */
-/* Dropshadows old style */
+/* Dropshadows */
+img.dropshadow {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+  margin: 15px 0px;
+}
 img[src*="-ds."] {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
   margin: 15px 0px;
 }
 
-/* Dropshadows */
-img[src~="dropshadow"] {
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
-  margin: 15px 0px;
-}
-
 /* Thumbnail */
-img[src~="thumbnail"] {
-   /*width:150px;*/
-   height:100px;
+img.thumbnail {
+   width: 200px;
+   padding: 3px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
 }
 
 /* Bordered */
-img[src~="bordered"] {
+img.bordered {
    border: 1px solid black;
 }
 
@@ -899,4 +899,12 @@ div.top {
     {
         display: none !important;
     }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	body {
+	  /* https://www.schemecolor.com/mojave-dark-mode-wallpaper.php */
+		/* background-color: #081B33; */
+	}
 }
